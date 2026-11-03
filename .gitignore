@@ -27,3 +27,7 @@ coverage/
 Thumbs.db
 .vscode/
 .idea/
+
+# Downloaded industrial raw data and local replay extracts
+backend/data/*.json
+backend/data/*.csv

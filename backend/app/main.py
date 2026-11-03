@@ -10,8 +10,10 @@ from .database import Base, engine, get_db
 from .models import Asset, SparePart, Plant, SensorReading, ProcurementPlan
 from .analytics import asset_detail, availability_for
 from .seed import seed
+from .real_replay import router as real_replay_router
 
 app = FastAPI(title="BrewSpare API", version="1.0.0")
+app.include_router(real_replay_router)
 app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000"], allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 @app.on_event("startup")
