@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const items = [
-  ["/","⌂","Plant Overview"],["/assets","◫","Assets"],["/spare-parts","⚙","Spare Parts"],["/maintenance","⌁","Maintenance"],["/inventory","▣","Inventory"],["/procurement","◇","Procurement"],["/ai-insights","✦","AI Insights"],["/reports","▤","Reports"],["/scenario-simulator","⌘","Scenario Simulator"],["/settings","⚙","Settings"]
+  ["/","⌂","Plant Overview"],["/assets","◫","Assets"],["/spare-parts","⚙","Spare Parts"],["/maintenance","⌁","Maintenance"],["/inventory","▣","Inventory"],["/procurement","◇","Procurement"],["/ai-insights","✦","AI Insights"],["/reports","▤","Reports"],["/scenario-simulator","⌘","Scenario Simulator"],["/real-replay","◷","Real Data Replay"],["/settings","⚙","Settings"]
 ];
 export default function Sidebar(){
   const path=usePathname();
